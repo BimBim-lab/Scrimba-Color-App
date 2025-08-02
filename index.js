@@ -30,11 +30,10 @@ getColorsSchemeButton.addEventListener('click', () => {
 })
 
 // Add event listener to each color label to copy hex value to clipboard
-colorLabels.forEach(label => {
-    label.addEventListener('click', (event)=> {
+
+colorSchemeDisplay.addEventListener('click', (event)=> {
         const hexValue = event.target.dataset.hex;
         navigator.clipboard.writeText(hexValue)
         seedColorInput.value = hexValue; // Update seed color input with the copied hex value
         alert(`Copied ${hexValue} to clipboard!`); 
     })
-})
