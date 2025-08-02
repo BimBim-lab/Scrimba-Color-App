@@ -2,3 +2,94 @@ html, body {
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+header {
+    padding: 0 0 2em 0;
+    background-color: #ffffff;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.color-control{
+    /* grid dibagi 8 colomn . kolom pertama 1fr, kolom kedua 5 fr dan ketiga 2fr */
+    display:grid;
+    font-size: 1.2rem;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: auto;
+    height: 2.5em;
+    gap: 1em 0.5em;
+    padding: 1em;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.color-input {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+section.color-scheme-display {
+    /* buat gridnya autofit*/
+    max-width: 800px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+    gap: 0;
+    box-sizing: border-box;
+    border-width: 800px;
+    padding: 0;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color:#000000;
+    padding: 0.3em 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 2em 0;
+    gap: 0.8em;
+    margin: 0;
+
+}
+.color-box {
+    width: 100%; 
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin 0;
+    padding: 0;
+}
+
+figcaption{
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+figcaption:hover {
+    color: #555555;
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
